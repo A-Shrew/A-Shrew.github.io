@@ -1,5 +1,13 @@
+head{
+    background-color: #00091b;
+    font-family: "Trebuchet MS", sans-serif;
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
+
 body {
-    background-color: #14213D;
+    background-color: #00091b;
     font-family: "Trebuchet MS", sans-serif;
     color: white;
 
