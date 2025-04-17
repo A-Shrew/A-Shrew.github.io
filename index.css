@@ -17,7 +17,7 @@ body {
 .card {
     width: 50%;
     height: 50%;
-    margin: auto;
+    margin: 20px, auto;
     padding: 20px;
     background-color: #FCA311;
     border-radius: 8px;
