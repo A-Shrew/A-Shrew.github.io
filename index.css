@@ -20,6 +20,7 @@ body {
     margin: 20px, auto;
     padding: 20px;
     background-color: #FCA311;
+    border: solid 2pt #14213D;
     border-radius: 8px;
 }
 
