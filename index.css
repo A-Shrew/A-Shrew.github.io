@@ -28,7 +28,13 @@ body {
 }
 
 .card a{
-    text-decoration: none;
+    border: solid black 1pt;
+    text-decoration: solid;
     color: white;
     padding: 10px;
+}
+
+.card a:hover{
+    color: blue;
+    cursor: pointer;
 }
