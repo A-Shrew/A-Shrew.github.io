@@ -1,5 +1,12 @@
+html{
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
 body {
-    background-color: #00091b;
+    background: linear-gradient(rgb(43, 43, 43),rgb(25, 25, 25));
     font-family: "Trebuchet MS", sans-serif;
     color: rgb(206, 208, 206);
     text-align: center;
@@ -7,7 +14,11 @@ body {
 
 }
 .projects {
-    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 80%;
     border-radius: 16px;
     box-shadow: 8px;
     text-align: center;
@@ -16,29 +27,25 @@ body {
 }
 
 .card {
-    width: 50%;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #23291f;
-    border: solid 2pt #000000;
+    width: 20em;
+    height: 30em;
+    margin: 10px 5px;
+    padding: 20px;
+    background-position: center;
+    border: solid 4pt rgb(5, 1, 34);
     border-radius: 8px;
 }
 
+.card:hover{
+    cursor:pointer;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+    scale:105%;
+}
+
 .card h2{
+    margin: auto;
+    text-align: center;
     text-decoration: solid;
+    text-wrap: nowrap;
     color: rgb(206, 208, 206);
-}
-
-.card a{
-    display:inline-block;
-    border: solid black 1pt;
-    text-decoration: solid;
-    color: rgb(206, 208, 206);
-    padding: 8px;
-    margin-bottom: 8px;
-}
-
-.card a:hover{
-    color: black;
-    cursor: pointer;
 }

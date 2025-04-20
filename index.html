@@ -2,38 +2,37 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
-    
+    <script>
+    function toRepository(element){
+        const name = element.getAttribute("data-repo");
+        if (name) {
+            const url = `https://github.com/A-Shrew/${name}`;
+            window.open(url, "_blank");
+        }
+    }
+    </script>
 </head>
 <body>
+    <h1>Projects</h1>
     <div class="projects">
-        <h1>Projects</h1>
-        <div class="card">
+        <div class="card" data-repo="PortalKong" onclick="toRepository(this)" style="background-image:url(PortalKong.png); background-position: center">
             <h2>Portal Kong</h2>
-            <p>Unity, C#, Shaders</p>
-            <a href="https://github.com/A-Shrew/PortalKong">Click for Repository</a>
-            
-        </div>
-        <div class="card">
-            <h2>Advantage BlackJack</h2>
-            <p>Unity, C#, Statistics</p>
-            <a href="https://github.com/A-Shrew/AdvantageBlackJack">Click for Repository</a>
         </div>
 
-        <div class="card">
-            <h2>Job Finder Website</h2>
-            <p>PHP, CSS, JavaScript, SQL</p>
-            <a href="https://github.com/A-Shrew/COSC-360-Project">Click for Repository</a>
+        <div class="card" data-repo="AdvantageBlackJack" onclick="toRepository(this)" style="background-image:url(BlackJack.png); background-position: center">
+            <h2>BlackJack</h2>
         </div>
 
-        <div class="card">
-            <h2>Medical Booking App</h2>
-            <p>Android Studio, Java, XML</p>
-            <a href="https://github.com/A-Shrew/MedicallyApp">Click for Repository</a>
-        </div>
-        <div class="card">
+        <div class="card" data-repo="Weather-App" onclick="toRepository(this)" style="background-image:url(WeatherApp.png); background-position: center; background-size:115%">
             <h2>Weather App</h2>
-            <p>Android Sutdio, Java, XML, SQL</p>
-            <a href="https://github.com/A-Shrew/Weather-App">Click for Repository</a>
+        </div>
+
+        <div class="card" data-repo="COSC-360-Project" onclick="toRepository(this)" style="background-image:url(JobSite.png); background-position: center; background-size:300%">
+            <h2>Job Website</h2>
+        </div>
+
+        <div class="card">
+            <h2>Coming Soon</h2>
         </div>
     </div>
 </body>
