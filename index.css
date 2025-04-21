@@ -34,6 +34,9 @@ body {
 .social a{
     color: rgb(199, 199, 199);
     text-decoration: none;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: rgb(24, 24, 24);
 }
 
 .social a:hover{
