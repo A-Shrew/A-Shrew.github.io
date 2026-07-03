@@ -10,27 +10,29 @@
             window.open(url, "_blank");
         }
     }
+    function toProject(element){
+        const path = element.getAttribute("data-path");
+        if (path) {
+            window.location.href = path;
+        }
+    }
     </script>
 </head>
 <body>
-
     <div class="project">
         <div class="card" data-repo="PortalKong" onclick="toRepository(this)">
             <h2>Portal Kong</h2>
         </div>
-
         <div class="card" data-repo="COSC-360-Project" onclick="toRepository(this)">
             <h2>Job Website</h2>
         </div>
-
+        <div class="card" data-path="amazons/" onclick="toProject(this)">
+            <h2>Amazons</h2>
+            <p>Play against the AI &rarr;</p>
+        </div>
         <div class="card">
             <h2>Coming Soon</h2>
         </div>
-
-        <div class="card">
-            <h2>Coming Soon</h2>
-        </div>
-
         <div class="card">
             <h2>Coming Soon</h2>
         </div>
