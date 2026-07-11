@@ -18,10 +18,11 @@ header {
    text-align: center;
 }
 
+
 .project {
     flex:1;
-    background:white;   
-    color: black;
+    padding: 10px;
+    background-color:black;   
     display: flex;
 }
 
@@ -29,15 +30,15 @@ header {
     flex:1;
     height: 100%;
     padding: 20px;
-    background-color: black;
+    background-color: gray;
     border: solid 2px rgb(35, 35, 35);
-    transition: flex 0.3s ease-in-out;
+    transition: flex 0.5s;
     box-sizing: border-box;
 }
 
 .card:hover{
     cursor:pointer;
-    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 0 1000px rgba(61, 61, 61, 0.3);
     flex: 1.5;
 }
 
